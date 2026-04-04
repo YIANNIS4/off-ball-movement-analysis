@@ -1,5 +1,7 @@
 # Off-Ball Movement and Attacking Threat
 
+> Understanding how off-ball movement creates attacking threat using tracking-derived data.
+
 ## Overview
 
 This project explores how off-ball runs contribute to attacking threat in football.
@@ -23,9 +25,11 @@ The analysis is based on SkillCorner open data, using off-ball run events and xT
 ## Example Visuals
 
 ### Run Starting Locations
+Most runs begin in structured attacking areas just beyond the halfway line.
 ![Run Start Heatmap](images/run_start_heatmap.png)
 
 ### Run Ending Locations
+Runs consistently finish in central final-third zones, where attacking threat is highest.
 ![Run End Heatmap](images/run_end_heatmap.png)
 
 ---
@@ -94,6 +98,20 @@ Overall, the effectiveness of a run is not just about how often it happens, but 
 - SkillCorner Open Data (broadcast tracking-derived events)  
 - Off-ball run events  
 - xThreat values  
+
+---
+
+## Practical Applications
+
+This type of analysis can support decision-making in several ways.
+
+From a recruitment perspective, it can help identify players who generate attacking threat through movement, not just through actions on the ball. This is particularly useful for profiling forwards and wide players who contribute through positioning and timing of runs.
+
+From a tactical perspective, it can highlight which types of runs are most effective in different phases of play. For example, teams may benefit from encouraging more box-attacking movements during transition phases, where space is greater.
+
+It can also support player development by identifying whether a player relies more on volume of runs or on high-impact movements, helping coaches tailor training and decision-making.
+
+Overall, this approach provides a more complete understanding of attacking contribution beyond traditional metrics.
 
 ---
 
