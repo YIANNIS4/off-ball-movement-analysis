@@ -8,9 +8,21 @@ Understanding how off-ball movement creates attacking threat using tracking-deri
 
 This project explores how off-ball runs contribute to attacking threat in football.
 
-Rather than focusing only on actions on the ball, the aim is to understand how players create value through movement — where they run, when they run, and how those runs influence attacking situations.
+Most analysis in football focuses on actions on the ball — passes, shots, and carries. However, many attacking situations are created before the ball is even played, through movement that disrupts defensive structure.
+
+The aim here is to understand how players create value through movement — where they run, when they run, and how those runs influence attacking outcomes.
 
 The analysis is based on SkillCorner open data (A-League sample), using off-ball run events and xThreat as a measure of attacking value.
+
+---
+
+##  Problem
+
+Traditional football analysis focuses heavily on on-ball actions such as passes and shots.
+
+However, many attacking situations are driven by off-ball movement — actions that are difficult to quantify and therefore often under-analysed.
+
+This project aims to address that gap by evaluating how different types of off-ball runs contribute to attacking threat.
 
 ---
 
@@ -22,20 +34,21 @@ The analysis is based on SkillCorner open data (A-League sample), using off-ball
 - A clear trade-off exists between frequency and effectiveness — high-volume movements contribute less directly to attacking threat  
 - Off-ball movement consistently progresses play into central, high-value areas in the final third  
 
+This analysis shows that the value of a run is not defined by how often it happens, but by when, where, and how it is executed.
+
 ---
 
 ##  Example Visuals
 
-## 📊 Example Visuals
-
-### Run Value by Type
+### Run Value by Type  
 ![Run Value](images/run_value_by_type.png)
 
-### Run Starting Locations
+### Run Starting Locations  
 ![Run Start Heatmap](images/run_start_heatmap.png)
 
-### Run Ending Locations
+### Run Ending Locations  
 ![Run End Heatmap](images/run_end_heatmap.png)
+
 ---
 
 ##  Approach
@@ -80,7 +93,7 @@ Key findings:
 
 ##  Results Summary
 
-The analysis shows that off-ball movement creates value in different ways.
+Off-ball movement creates value in different ways depending on the context.
 
 Box-attacking runs are the most directly dangerous, especially when they occur in fast attacking phases such as transitions and quick breaks. In contrast, support movements happen more often but are less directly linked to immediate attacking threat.
 
@@ -120,9 +133,9 @@ This highlights the importance of evaluating players not just by how often they 
 
 This type of analysis can support decision-making in several ways.
 
-From a recruitment perspective, it can help identify players who generate attacking threat through movement, not just through actions on the ball. This is particularly useful for profiling forwards and wide players who contribute through positioning and timing of runs.
+From a recruitment perspective, it helps identify players who generate attacking threat through movement, not just through actions on the ball. This is particularly useful for profiling forwards and wide players who contribute through positioning and timing of runs.
 
-From a tactical perspective, it can highlight which types of runs are most effective in different phases of play. For example, teams may benefit from encouraging more box-attacking movements during transition phases, where space is greater.
+From a tactical perspective, it highlights which types of runs are most effective in different phases of play. For example, teams may benefit from encouraging more box-attacking movements during transition phases, where space is greater.
 
 It can also support player development by identifying whether a player relies more on volume of runs or on high-impact movements, helping coaches tailor training and decision-making.
 
@@ -141,9 +154,15 @@ Overall, this approach provides a more complete understanding of attacking contr
 
 ##  Why This Matters
 
-Off-ball movement is a key part of attacking play, but it is often overlooked.
+Off-ball movement plays a crucial role in creating attacking opportunities, yet it is often overlooked in traditional analysis.
 
-This project shows that combining movement, space, and context can provide deeper insight into how teams create chances, and how players contribute beyond actions on the ball.
+By combining movement, space, and context, this project shows how players can create value without touching the ball, providing a more complete view of attacking contribution.
+
+---
+
+##  Final Takeaway
+
+Not all movement is equal — the most effective players are those who combine timing, space, and intent to generate real attacking value.
 
 ---
 
