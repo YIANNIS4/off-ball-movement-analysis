@@ -73,7 +73,6 @@ Key findings:
 - The value of a run depends on both the type of movement and the game context  
 
 ---
-
 ## Results Summary
 
 The analysis shows that off-ball movement creates value in different ways.
@@ -88,8 +87,8 @@ Overall, the effectiveness of a run is not just about how often it happens, but 
 
 ## Project Structure
 
-- `01_data_preparation.ipynb` → data loading and preprocessing  
-- `02_off_ball_movement_analysis.ipynb` → full analysis, visualisations, and results  
+- `01_data_preparation.ipynb` → loads the SkillCorner open data, extracts off-ball run events, and prepares the dataset for analysis
+- `02_off_ball_movement_analysis.ipynb` → run-type analysis, player profiling, spatial analysis, and regression modelling
 
 ---
 
