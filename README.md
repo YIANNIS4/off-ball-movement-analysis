@@ -38,16 +38,26 @@ This analysis shows that the value of a run is not defined by how often it happe
 
 ---
 
-##  Example Visuals
+## 📊 Example Visuals
 
 ### Run Value by Type  
 ![Run Value](images/run_value_by_type.png)
 
+Cross-receiver runs clearly stand out as the most dangerous movement, generating significantly higher attacking threat compared to all other run types. In contrast, support and build-up movements occur more frequently but contribute less directly to goal-scoring situations.
+
+---
+
 ### Run Starting Locations  
 ![Run Start Heatmap](images/run_start_heatmap.png)
 
+Most off-ball runs originate in structured attacking areas just beyond the halfway line, where teams are organised in possession and looking to progress play.
+
+---
+
 ### Run Ending Locations  
 ![Run End Heatmap](images/run_end_heatmap.png)
+
+Runs consistently end in central final-third zones, directly in front of goal. This highlights how movement is used to transform controlled possession into dangerous attacking positions.
 
 ---
 
