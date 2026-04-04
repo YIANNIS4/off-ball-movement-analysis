@@ -24,6 +24,10 @@ The results show that not all runs are equally valuable, with movements attackin
 
 ---
 
+**Tools:** Python, pandas, matplotlib, SkillCorner Open Data
+
+---
+
 ## Overview
 
 Most football analysis focuses on actions on the ball such as passes and shots. However, many attacking situations are created before the ball is played, through movement that disrupts defensive structure.
@@ -185,6 +189,15 @@ By combining movement, space, and context, this project provides a clearer under
 ## Final Takeaway
 
 Not all movement is equal. The most effective players are those who combine timing, space, and intent to create real attacking value.
+
+---
+
+## What I Learned
+
+- How to extract tactical insight from tracking-derived events  
+- How different run types contribute to attacking value  
+- How to link movement patterns to xThreat  
+- How to communicate analytical findings clearly
 
 ---
 
