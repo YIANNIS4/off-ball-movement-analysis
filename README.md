@@ -1,40 +1,44 @@
-# Off-Ball Movement and Attacking Threat
+#  Off-Ball Movement and Attacking Threat
 
-> Understanding how off-ball movement creates attacking threat using tracking-derived data.
+Understanding how off-ball movement creates attacking threat using tracking-derived data.
 
-## Overview
+---
+
+##  Overview
 
 This project explores how off-ball runs contribute to attacking threat in football.
 
-Rather than focusing only on actions on the ball, the aim is to understand how players create value through movement - where they run, when they run, and how those runs influence attacking situations.
+Rather than focusing only on actions on the ball, the aim is to understand how players create value through movement — where they run, when they run, and how those runs influence attacking situations.
 
-The analysis is based on SkillCorner open data, using off-ball run events and xThreat as a measure of attacking value.
-
----
-
-## Key Insights
-
-- Not all off-ball runs contribute equally to attacking threat  
-- Box-attacking movements (e.g. cross-receiver runs) generate the highest value  
-- More frequent runs (e.g. support runs) are less directly linked to danger  
-- Runs are significantly more effective during transitions and quick breaks  
-- Off-ball movement consistently progresses play into high-value central areas in the final third  
+The analysis is based on SkillCorner open data (A-League sample), using off-ball run events and xThreat as a measure of attacking value.
 
 ---
 
-## Example Visuals
+##  Key Insights
+
+- Cross-receiver runs are by far the most dangerous, generating **~0.108 xThreat per run**, over **5× higher than support movements (~0.018)**  
+- Runs in behind are the most valuable non-crossing movement, producing **~0.051 xThreat**, more than **2.5× the value of support or overlap runs**  
+- Transition moments create the highest value, with transition cross-receiver runs reaching **~0.155 xThreat per run**  
+- A clear trade-off exists between frequency and effectiveness — high-volume movements contribute less directly to attacking threat  
+- Off-ball movement consistently progresses play into central, high-value areas in the final third  
+
+---
+
+##  Example Visuals
+
+## 📊 Example Visuals
+
+### Run Value by Type
+![Run Value](images/run_value_by_type.png)
 
 ### Run Starting Locations
-Most runs begin in structured attacking areas just beyond the halfway line.
 ![Run Start Heatmap](images/run_start_heatmap.png)
 
 ### Run Ending Locations
-Runs consistently finish in central final-third zones, where attacking threat is highest.
 ![Run End Heatmap](images/run_end_heatmap.png)
-
 ---
 
-## Approach
+##  Approach
 
 The project follows a simple, structured workflow:
 
@@ -42,38 +46,39 @@ The project follows a simple, structured workflow:
 - Measure their attacking value using xThreat  
 - Compare frequency vs effectiveness  
 - Analyse runs across different phases of play  
-- Build player-level profiles (per90 metrics)  
+- Build player-level profiles (per 90 metrics)  
 - Study spatial patterns (start and end locations)  
 - Use a simple regression model to understand what drives run value  
 
 ---
 
-## Spatial Insight
+##  Spatial Insight
 
 A clear movement pattern emerges:
 
-- **Runs typically start in structured attacking areas**  
-  (~0 to 20 metres in the attacking half)
+- Runs typically start in structured attacking areas  
+  (~0 to 20 metres inside the attacking half)
 
-- **Runs most often end in high-value zones**  
-  (~30 to 50 metres, especially in central areas in front of goal)
+- Runs most often end in high-value central zones  
+  (~30 to 50 metres, directly in front of goal)
 
-This shows how off-ball movement helps turn possession into real attacking threat.
+This highlights how off-ball movement progresses attacks from stable possession into dangerous scoring areas.
 
 ---
 
-## Modelling Run Value
+##  Modelling Run Value
 
 A regression model was used to understand what makes a run dangerous.
 
 Key findings:
 
 - Cross-receiver runs are the most effective in generating threat  
-- Runs during quick breaks and transitions are significantly more dangerous  
+- Runs during transitions and quick breaks are significantly more dangerous  
 - The value of a run depends on both the type of movement and the game context  
 
 ---
-## Results Summary
+
+##  Results Summary
 
 The analysis shows that off-ball movement creates value in different ways.
 
@@ -85,22 +90,33 @@ Overall, the effectiveness of a run is not just about how often it happens, but 
 
 ---
 
-## Project Structure
+##  Player Insight
 
-- `01_data_preparation.ipynb` → loads the SkillCorner open data, extracts off-ball run events, and prepares the dataset for analysis
-- `02_off_ball_movement_analysis.ipynb` → run-type analysis, player profiling, spatial analysis, and regression modelling
+- **A. Goodwin** records one of the highest attacking outputs:
+  - **3.20 xThreat per 90**
+  - Demonstrates how efficient off-ball movement can outperform sheer volume of runs  
+
+This highlights the importance of evaluating players not just by how often they move, but by the impact of those movements.
 
 ---
 
-## Data
+##  Project Structure
 
-- SkillCorner Open Data (broadcast tracking-derived events)  
-- Off-ball run events  
+- `01_data_preparation.ipynb` → loads the SkillCorner open data, extracts off-ball run events, and prepares the dataset  
+- `02_off_ball_movement_analysis.ipynb` → run-type analysis, player profiling, spatial analysis, and regression modelling  
+
+---
+
+##  Data
+
+- SkillCorner Open Data (tracking-derived event dataset)  
+- Competition: A-League (sample matches)  
+- Off-ball run events (~5,000+)  
 - xThreat values  
 
 ---
 
-## Practical Applications
+##  Practical Applications
 
 This type of analysis can support decision-making in several ways.
 
@@ -114,7 +130,7 @@ Overall, this approach provides a more complete understanding of attacking contr
 
 ---
 
-## Limitations
+##  Limitations
 
 - Does not include full defensive context (e.g. pressure, positioning)  
 - xThreat captures attacking value but not all tactical impact  
@@ -123,16 +139,14 @@ Overall, this approach provides a more complete understanding of attacking contr
 
 ---
 
-## Why This Matters
+##  Why This Matters
 
 Off-ball movement is a key part of attacking play, but it is often overlooked.
 
-This project shows that combining movement, space, and context can provide deeper insight into how teams create chances , and how players contribute beyond actions on the ball.
+This project shows that combining movement, space, and context can provide deeper insight into how teams create chances, and how players contribute beyond actions on the ball.
 
 ---
 
-## Author
+##  Author
 
-Yiannis - MSc Football Data Analytics
-
-  
+Yiannis — MSc Football Data Analytics
