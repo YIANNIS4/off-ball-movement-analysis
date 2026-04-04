@@ -6,7 +6,7 @@
 
 This project explores how off-ball runs contribute to attacking threat in football.
 
-Rather than focusing only on actions on the ball, the aim is to understand how players create value through movement — where they run, when they run, and how those runs influence attacking situations.
+Rather than focusing only on actions on the ball, the aim is to understand how players create value through movement - where they run, when they run, and how those runs influence attacking situations.
 
 The analysis is based on SkillCorner open data, using off-ball run events and xThreat as a measure of attacking value.
 
@@ -127,12 +127,12 @@ Overall, this approach provides a more complete understanding of attacking contr
 
 Off-ball movement is a key part of attacking play, but it is often overlooked.
 
-This project shows that combining movement, space, and context can provide deeper insight into how teams create chances — and how players contribute beyond actions on the ball.
+This project shows that combining movement, space, and context can provide deeper insight into how teams create chances , and how players contribute beyond actions on the ball.
 
 ---
 
 ## Author
 
-Yiannis — MSc Football Data Analytics
+Yiannis - MSc Football Data Analytics
 
   
