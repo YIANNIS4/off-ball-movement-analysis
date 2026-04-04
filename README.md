@@ -6,11 +6,21 @@ Understanding how off-ball movement contributes to attacking threat using tracki
 
 ## Project Summary
 
-This project analyses off-ball movement using tracking-derived data to understand which types of runs generate attacking threat.
+In this project, I analysed off-ball movement using tracking-derived data to understand which types of runs generate attacking threat.
 
-By linking movement patterns to xThreat values, it evaluates how players create danger without touching the ball.
+By linking movement patterns to xThreat values, I explored how players create danger without touching the ball.
 
 The results show that not all runs are equally valuable, with movements attacking the penalty area having a significantly higher impact on attacking outcomes.
+
+---
+
+## Highlights
+
+- Approximately 5,000 off-ball runs analysed  
+- Multiple run types identified and compared  
+- xThreat used to evaluate attacking value  
+- Analysis across different phases of play  
+- Player profiling using per 90 metrics  
 
 ---
 
@@ -125,8 +135,8 @@ This shows that efficient movement can generate high attacking value even withou
 
 ## Project Structure
 
-- `01_data_preparation.ipynb` - loads the SkillCorner open data, extracts off-ball run events, and prepares the dataset  
-- `02_off_ball_movement_analysis.ipynb` - includes run-type analysis, player profiling, spatial analysis, and modelling  
+- [01_data_preparation.ipynb](01_data_preparation.ipynb) - loads the SkillCorner open data, extracts off-ball run events, and prepares the dataset  
+- [02_off_ball_movement_analysis.ipynb](02_off_ball_movement_analysis.ipynb) - includes run-type analysis, player profiling, spatial analysis, and modelling  
 
 ---
 
@@ -136,6 +146,8 @@ This shows that efficient movement can generate high attacking value even withou
 - Competition, A-League sample matches  
 - Approximately 5,000 off-ball runs analysed  
 - xThreat used as the main measure of attacking value  
+
+Built using Python, pandas, and matplotlib, working with SkillCorner open data.
 
 ---
 
