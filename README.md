@@ -8,7 +8,9 @@ Understanding how off-ball movement contributes to attacking threat using tracki
 
 This project analyses off-ball movement using tracking-derived data to understand which types of runs generate attacking threat.
 
-By linking different movement patterns to xThreat values, it evaluates how players create danger without touching the ball. The results show that not all runs are equally valuable, with certain movements, especially those attacking the penalty area, having a significantly higher impact on attacking outcomes.
+By linking movement patterns to xThreat values, it evaluates how players create danger without touching the ball.
+
+The results show that not all runs are equally valuable, with movements attacking the penalty area having a significantly higher impact on attacking outcomes.
 
 ---
 
@@ -34,11 +36,15 @@ This project addresses that gap by evaluating how different types of off-ball ru
 
 ## Key Insights
 
-- Cross-receiver runs are the most dangerous movement, generating approximately 0.108 xThreat per run, more than five times higher than support movements, which average around 0.018  
-- Runs in behind are the most valuable non-crossing movement, producing approximately 0.051 xThreat per run, more than two and a half times the value of support or overlap runs  
-- Transition phases create the highest value, with cross-receiver runs during transitions reaching approximately 0.155 xThreat per run  
-- There is a clear trade-off between frequency and effectiveness, high-volume movements contribute less directly to attacking threat  
-- Attacking players, particularly centre forwards and wide players, generate the highest total threat through repeated high-value movements, with players such as G. May and N. Botić standing out  
+- Cross-receiver runs are the most dangerous movement, generating approximately 0.108 xThreat per run, more than five times higher than support movements (~0.018)
+
+- Runs in behind are the most valuable non-crossing movement, producing approximately 0.051 xThreat per run, more than two and a half times the value of support or overlap runs
+
+- Transition phases create the highest value, with cross-receiver runs during transitions reaching approximately 0.155 xThreat per run
+
+- There is a clear trade-off between frequency and effectiveness, high-volume movements contribute less directly to attacking threat
+
+- Attacking players, particularly centre forwards and wide players, generate the highest total threat through repeated high-value movements, with players such as G. May and N. Botić standing out
 
 This shows that the value of a run is not defined by how often it happens, but by when, where, and how it is executed.
 
@@ -71,13 +77,13 @@ Runs consistently finish in central final-third zones, directly in front of goal
 
 The project follows a structured workflow:
 
-- classify off-ball runs into different movement types  
-- measure attacking value using xThreat  
-- compare frequency and effectiveness  
-- analyse runs across different phases of play  
-- build player-level profiles using per 90 metrics  
-- study spatial patterns through start and end locations  
-- apply a regression model to understand what drives run value  
+- Classify off-ball runs into different movement types  
+- Measure attacking value using xThreat  
+- Compare frequency and effectiveness  
+- Analyse runs across different phases of play  
+- Build player-level profiles using per 90 metrics  
+- Study spatial patterns through start and end locations  
+- Apply a regression model to understand what drives run value  
 
 ---
 
@@ -119,8 +125,8 @@ This shows that efficient movement can generate high attacking value even withou
 
 ## Project Structure
 
-- 01_data_preparation.ipynb, loads the SkillCorner open data, extracts off-ball run events, and prepares the dataset  
-- 02_off_ball_movement_analysis.ipynb, includes run-type analysis, player profiling, spatial analysis, and modelling  
+- `01_data_preparation.ipynb` - loads the SkillCorner open data, extracts off-ball run events, and prepares the dataset  
+- `02_off_ball_movement_analysis.ipynb` - includes run-type analysis, player profiling, spatial analysis, and modelling  
 
 ---
 
@@ -149,10 +155,10 @@ Overall, this approach provides a more complete understanding of attacking contr
 
 ## Limitations
 
-- does not include full defensive context such as pressure or positioning  
+- Does not include full defensive context such as pressure or positioning  
 - xThreat captures attacking value but not all tactical impact  
-- run classifications simplify complex in-game movements  
-- analysis focuses on general patterns rather than team-specific tactics  
+- Run classifications simplify complex in-game movements  
+- Analysis focuses on general patterns rather than team-specific tactics  
 
 ---
 
