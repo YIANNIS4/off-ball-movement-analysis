@@ -66,10 +66,13 @@ This shows that the value of a run is not defined by how often it happens, but b
 
 ## Example Visuals
 
-### Run Value by Type  
-![Run Value](images/run_value_by_type.png)
+## Run Value by Type
 
-Cross-receiver runs clearly stand out as the most dangerous movement, generating significantly higher attacking threat than all other run types. In contrast, support and build-up movements are more frequent but contribute less directly to dangerous situations.
+![Run Value by Type](images/average_xthreat_by_run_type.png)
+
+Cross-receiver runs emerge as the most dangerous off-ball movement, generating significantly higher attacking threat than all other run types.
+
+In contrast, more frequent movements such as support and build-up runs contribute less directly to high-value attacking outcomes.
 
 ---
 
