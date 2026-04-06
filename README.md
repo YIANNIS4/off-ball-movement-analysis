@@ -76,6 +76,8 @@ In contrast, more frequent movements such as support and build-up runs contribut
 
 ---
 
+These spatial patterns help explain where off-ball runs originate and where they create the most attacking value.
+
 ### Run Starting Locations  
 ![Run Start Heatmap](images/run_start_heatmap.png)
 
