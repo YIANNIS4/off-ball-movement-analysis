@@ -1,4 +1,4 @@
-# Off-Ball Movement and Attacking Threat
+# Off-Ball Movement and Attacking Threat in Football
 
 Understanding how off-ball movement contributes to attacking threat using tracking-derived data.
 
@@ -56,7 +56,7 @@ This project addresses that gap by evaluating how different types of off-ball ru
 
 - Transition phases create the highest value, with cross-receiver runs during transitions reaching approximately 0.155 xThreat per run
 
-- There is a clear trade-off between frequency and effectiveness, high-volume movements contribute less directly to attacking threat
+- There is a clear trade-off between frequency and attacking impact, high-volume movements contribute less directly to attacking threat
 
 - Attacking players, particularly centre forwards and wide players, generate the highest total threat through repeated high-value movements, with players such as G. May and N. Botić standing out
 
@@ -76,7 +76,7 @@ In contrast, more frequent movements such as support and build-up runs contribut
 
 ---
 
-These spatial patterns help explain where off-ball runs originate and where they create the most attacking value.
+These spatial patterns provide context to the value of off-ball movement, showing where runs start and where they create the most attacking threat.
 
 ### Run Starting Locations  
 ![Run Start Heatmap](images/run_start_heatmap.png)
