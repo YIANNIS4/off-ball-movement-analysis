@@ -64,11 +64,13 @@ Overall, the value of a run depends less on how often it happens, and more on wh
 
 ## Example Visuals
 
+The chart below shows the average attacking threat generated per run type.
+
 ## Run Value by Type
 
 ![Run Value by Type](images/average_xthreat_by_run_type.png)
 
-The chart below shows the average attacking threat generated per run type.
+
 
 Cross-receiver runs stand out as the most dangerous movement in this dataset. In contrast, support and build-up runs occur more frequently but are less directly linked to high-value attacking situations.
 
