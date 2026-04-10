@@ -12,6 +12,8 @@ Rather than focusing only on what happens on the ball, the aim was to understand
 
 The results suggest that not all runs are equal. Some movements, especially those attacking the penalty area, tend to have a much higher impact on attacking outcomes.
 
+This project highlights that evaluating off-ball movement is not only a question of measuring value, but also understanding the context in which that value is created.
+
 ---
 
 ## Highlights
@@ -58,7 +60,19 @@ This project tries to address that by linking different types of runs to attacki
 
 - Attacking players, especially centre forwards and wide players, generate most of the threat through repeated high-value runs  
 
-Overall, the value of a run depends less on how often it happens, and more on when, where, and how it is made.
+Overall, the value of a run depends less on how often it happens, and more on its context — when it occurs, where it occurs, and how it interacts with the phase of play.
+
+---
+
+## Contextual Interpretation
+
+Not all runs occur in the same context, and their value depends heavily on the phase of play.
+
+For example, support runs in early build-up phases may appear to have low direct attacking value, but they can play an important role in maintaining possession and enabling progression.
+
+In contrast, similar movements in the final third may contribute more directly to chance creation through combination play.
+
+This suggests that evaluating off-ball movement requires contextual segmentation, as the same run type can have different tactical value depending on when and where it occurs.
 
 ---
 
@@ -69,8 +83,6 @@ The chart below shows the average attacking threat generated per run type.
 ## Run Value by Type
 
 ![Run Value by Type](images/average_xthreat_by_run_type.png)
-
-
 
 Cross-receiver runs stand out as the most dangerous movement in this dataset. In contrast, support and build-up runs occur more frequently but are less directly linked to high-value attacking situations.
 
@@ -113,6 +125,14 @@ xThreat was used as a way to estimate the attacking value created by each run.
 Each off-ball run was linked to the next on-ball action in the sequence, such as a pass or carry, and the xThreat value of that action was assigned to the run.
 
 This is not a perfect measure, but it provides a practical way to connect movement with how the ball progresses into more dangerous areas.
+
+### Time Horizon Consideration
+
+One important limitation of this approach is the reliance on xThreat’s fixed time horizon (approximately 10 seconds).
+
+Some off-ball runs, particularly those starting deeper in the pitch, may take longer to influence the outcome of an attack. As a result, their contribution can be underestimated when using a short evaluation window.
+
+This means that certain movement types, especially build-up or progression runs, may have a delayed impact that is not fully captured in this framework.
 
 ---
 
@@ -190,6 +210,19 @@ It can also support player development by identifying whether a player relies mo
 - xThreat does not capture all aspects of attacking play  
 - Run classifications simplify complex behaviours  
 - The dataset is limited to A-League matches, so findings should be interpreted within that context  
+
+---
+
+## Future Work
+
+A natural next step would be to incorporate more contextual detail into the analysis.
+
+This could include:
+- Segmenting runs by phase (build-up, progression, final third)
+- Adjusting value attribution based on sequence length rather than a fixed time window
+- Incorporating defensive context such as pressure and spacing
+
+This would allow for a more accurate understanding of how different types of off-ball movement contribute to attacking play across different situations.
 
 ---
 
