@@ -240,6 +240,24 @@ Not all movement is equal. The most effective players are those who combine timi
 
 ---
 
+## Part of a Series
+
+This is the first project in a series exploring off-ball movement 
+using SkillCorner open data.
+
+**Project 1 — Off-Ball Movement and Attacking Threat (this project)**
+Establishes which run types generate the most attacking threat across 
+all phases of play. Cross-receiver runs generate over 5x more xThreat 
+than support runs.
+
+**Project 2 — Off-Ball Run Value in Transitions**
+Goes one layer deeper — asking not which runs are most valuable on 
+average, but under which conditions runs become valuable, and how 
+timing, combinations, and physical intensity shape that value.
+[View project](https://github.com/YIANNIS4/off-ball-transitions-skillcorner)
+
+---
+
 ## Author
 
 Yiannis  
